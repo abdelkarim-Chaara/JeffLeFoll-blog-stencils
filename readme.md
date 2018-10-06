@@ -42,3 +42,7 @@ To run the unit tests and watch for file changes during development, run:
 ```
 npm run test.watch
 ```
+
+Video Demo : 
+
+[![Stencil Blog](https://img.youtube.com/vi/SGoM1gO7vuI)](https://www.youtube.com/watch?v=SGoM1gO7vuI)
