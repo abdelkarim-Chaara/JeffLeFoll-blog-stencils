@@ -4,7 +4,8 @@ import { MatchResults, RouterHistory } from '@stencil/router';
 
 @Component({
     tag: 'app-delete',
-   // styleUrl: 'app-delete.css'
+    styleUrl: '../../global/css/clean-blog.css',
+
 })
 export class AppDelete {
     @Prop() match: MatchResults;
@@ -41,12 +42,13 @@ export class AppDelete {
 
  }  
  close() {
-    this.history.goBack();
+
+   this.history.goBack();
   }
     render() {
         return (
 <stencil-route-link url='../'>
-                  <button onClick={() => this.close()} >
+                  <button class="btn btn-secondary" onClick={() => this.close()} >
                     Back
                   </button>
                 </stencil-route-link>        );

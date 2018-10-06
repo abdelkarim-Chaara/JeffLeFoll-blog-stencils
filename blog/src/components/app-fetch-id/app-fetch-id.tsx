@@ -4,7 +4,7 @@ import { RouterHistory } from '@stencil/router';
 
 @Component({
   tag: 'app-fetch-id',
-  styleUrl: 'app-fetch-id.css',
+  styleUrl: '../../global/css/clean-blog.css',
   shadow: true
 })
 export class AppFetchId {
@@ -27,7 +27,6 @@ export class AppFetchId {
     }
   
     componentWillLoad() { 
-      console.log("ID:==>"+this.match.params.name);
   
      if (this.match.params.name) {
         
@@ -49,12 +48,10 @@ export class AppFetchId {
         
                    <h3>Title : {this.data['title']}</h3>
 
-                   <p>Article : {this.data['article']}</p>
-                  <h6>author : {this.data['autor']}</h6>
-
-                  <p>date : {this.data['creationDate'] }</p>
+                   <p class="mb-0" > {this.data['article']}</p>
+                  <footer  class="blockquote-footer" >Posted By : <b>{this.data['autor']}</b>  on <b>{this.data['creationDate'] } </b></footer >
                   <stencil-route-link url='../'>
-                  <button onClick={() => this.close()} >
+                  <button class="btn btn-primary" onClick={() => this.close()} >
                     Back
                   </button>
                 </stencil-route-link>

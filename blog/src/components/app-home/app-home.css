@@ -1,6 +1,10 @@
 .app-home {
   padding: 10px;
 }
+#head {
+
+  background-image: url('assets/img/home-bg.jpg');
+}
 
 button {
   background: #5851ff;

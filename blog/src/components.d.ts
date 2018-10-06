@@ -16,12 +16,8 @@ import {
 
 export namespace Components {
 
-  interface AppAddArticle {
-    'history': RouterHistory;
-  }
-  interface AppAddArticleAttributes extends StencilHTMLAttributes {
-    'history'?: RouterHistory;
-  }
+  interface AppAddArticle {}
+  interface AppAddArticleAttributes extends StencilHTMLAttributes {}
 
   interface AppDelete {
     'history': RouterHistory;
@@ -33,11 +29,9 @@ export namespace Components {
   }
 
   interface AppEdit {
-    'history': RouterHistory;
     'match': MatchResults;
   }
   interface AppEditAttributes extends StencilHTMLAttributes {
-    'history'?: RouterHistory;
     'match'?: MatchResults;
   }
 
@@ -58,6 +52,12 @@ export namespace Components {
     'name'?: string;
   }
 
+  interface AppFooter {}
+  interface AppFooterAttributes extends StencilHTMLAttributes {}
+
+  interface AppHeader {}
+  interface AppHeaderAttributes extends StencilHTMLAttributes {}
+
   interface AppHome {}
   interface AppHomeAttributes extends StencilHTMLAttributes {}
 
@@ -72,6 +72,8 @@ declare global {
     'AppEdit': Components.AppEdit;
     'AppFetchId': Components.AppFetchId;
     'AppFetch': Components.AppFetch;
+    'AppFooter': Components.AppFooter;
+    'AppHeader': Components.AppHeader;
     'AppHome': Components.AppHome;
     'AppRoot': Components.AppRoot;
   }
@@ -82,6 +84,8 @@ declare global {
     'app-edit': Components.AppEditAttributes;
     'app-fetch-id': Components.AppFetchIdAttributes;
     'app-fetch': Components.AppFetchAttributes;
+    'app-footer': Components.AppFooterAttributes;
+    'app-header': Components.AppHeaderAttributes;
     'app-home': Components.AppHomeAttributes;
     'app-root': Components.AppRootAttributes;
   }
@@ -117,6 +121,18 @@ declare global {
     new (): HTMLAppFetchElement;
   };
 
+  interface HTMLAppFooterElement extends Components.AppFooter, HTMLStencilElement {}
+  var HTMLAppFooterElement: {
+    prototype: HTMLAppFooterElement;
+    new (): HTMLAppFooterElement;
+  };
+
+  interface HTMLAppHeaderElement extends Components.AppHeader, HTMLStencilElement {}
+  var HTMLAppHeaderElement: {
+    prototype: HTMLAppHeaderElement;
+    new (): HTMLAppHeaderElement;
+  };
+
   interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {}
   var HTMLAppHomeElement: {
     prototype: HTMLAppHomeElement;
@@ -135,6 +151,8 @@ declare global {
     'app-edit': HTMLAppEditElement
     'app-fetch-id': HTMLAppFetchIdElement
     'app-fetch': HTMLAppFetchElement
+    'app-footer': HTMLAppFooterElement
+    'app-header': HTMLAppHeaderElement
     'app-home': HTMLAppHomeElement
     'app-root': HTMLAppRootElement
   }
@@ -145,6 +163,8 @@ declare global {
     'app-edit': HTMLAppEditElement;
     'app-fetch-id': HTMLAppFetchIdElement;
     'app-fetch': HTMLAppFetchElement;
+    'app-footer': HTMLAppFooterElement;
+    'app-header': HTMLAppHeaderElement;
     'app-home': HTMLAppHomeElement;
     'app-root': HTMLAppRootElement;
   }

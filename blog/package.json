@@ -22,5 +22,6 @@
   "bugs": {
     "url": "https://github.com/ionic-team/stencil"
   },
-  "homepage": "https://github.com/ionic-team/stencil"
+  "homepage": "https://github.com/ionic-team/stencil",
+  "devDependencies": {}
 }
