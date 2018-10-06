@@ -45,4 +45,4 @@ npm run test.watch
 
 Video Demo : 
 
-[![Stencil Blog](https://img.youtube.com/vi/SGoM1gO7vuI)](https://www.youtube.com/watch?v=SGoM1gO7vuI)
+[![Stencil Blog](https://img.youtube.com/vi/SGoM1gO7vuI/0.jpg)](https://www.youtube.com/watch?v=SGoM1gO7vuI)
