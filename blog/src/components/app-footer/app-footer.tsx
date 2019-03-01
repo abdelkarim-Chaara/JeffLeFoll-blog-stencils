@@ -3,7 +3,7 @@ import { Component } from '@stencil/core';
 
 @Component({
     tag: 'app-footer',
-    styleUrl: 'app-footer.css'
+   // styleUrl: 'app-footer.css'
 })
 export class AppFooter {
     
